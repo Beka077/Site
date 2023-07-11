@@ -108,6 +108,7 @@ body {
     border-radius: 28px;
     box-shadow: 0px 2px 23px #290235;
     width: 380px;
+    position: relative;
 }
 
 .title {
@@ -119,6 +120,9 @@ body {
 }
 
 .bottomText {
+    position: absolute;
+    bottom: 53px;
+    left: 20px;
     color: #ffffffe8;
 }
 
@@ -134,26 +138,72 @@ body {
 }
 
 .bottomCard {
-    padding: 20px;
+    padding: 55px;
 }
 
-.actions {
-    padding-top: 15px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: rgb(212, 5, 212);
-    letter-spacing: 0.5px;
+.btn {
+    padding-top: 58px;
+    position: absolute;
+    left: 16%;
+    transform: translate(-50%, -50%);
 }
 
-.actions1 {
-    margin-left: 3%;
-    padding-top: 15px;
+.btn-like {
     cursor: pointer;
-    background: none;
     border: none;
-    color: rgb(212, 5, 212);
-    letter-spacing: 0.5px;
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    background: rgb(212, 5, 212);
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.btn-comp {
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    background: rgb(212, 5, 212);
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+.btn-like:hover{
+    background: rgb(212, 5, 212);
+}
+
+.btn-like svg{
+    transition: 0.4s all;
+}
+
+.btn-like:hover > svg{
+    transform: scale(1.0) rotate(25deg);
+}
+
+.btn-comp:hover{
+    background: rgb(212, 5, 212);
+}
+
+.btn-comp svg{
+    transition: 0.4s all;
+}
+
+.btn-comp:hover > svg{
+    transform: scale(1.0) rotate(25deg);
 }
 
 .img {
